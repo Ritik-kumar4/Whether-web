@@ -26,9 +26,22 @@
                  <input type="hidden" id="wc" value="${weatherCondition}"> </input>
             </div>
             
-            <div class="cityDetails">        
+           <!-- <div class="cityDetails">        
                 <div class="desc"><strong>${city}</strong></div>
                 <div class="date">${date}</div>
+            </div>-->
+           
+      <div class="cityDetails">
+                <div class="desc"><strong>${city}</strong></div>
+                <!-- Combine the date and clock in a single container -->
+                <div class="date-clock-container">
+                    <!-- Remove the clock from the date container -->
+                  <!-- <div class="date">${date}</div> -->  
+                    <!-- Add a new div for the clock -->
+                    <div class="clock-container">
+                        <span id="clock"></span>
+                    </div>
+                </div>
             </div>
             <div class="windDetails">
             	<div class="humidityBox">
